@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" client="site" type="module" method="upgrade">
+	<name>MOD_$UPP_NAME$</name>
+	<author>$USER_NAME$</author>
+	<creationDate>$CREAT_DATE$</creationDate>
+	<copyright>Copyright (C) $CREATE_YEAR$ $USER_NAME$. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>$USER_EMAIL$</authorEmail>
+	<authorUrl>$USER_URL$</authorUrl>
+	<version>0.1</version>
+	<description>MOD_$UPP_NAME$_XML_DESCRIPTION</description>
+	
+	<files>
+		<filename module="mod_$LOW_NAME$">mod_$LOW_NAME$.php</filename>
+		<filename>mod_$LOW_NAME$.xml</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+		<folder>assets</folder>
+	</files>
+	
+	<languages folder="language">
+		<language tag="$LANG$">$LANG$.mod_$LOW_NAME$.ini</language>
+		<language tag="$LANG$">$LANG$.mod_$LOW_NAME$.sys.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				
+			</fieldset>
+		</fields>
+	</config>
+</extension>
