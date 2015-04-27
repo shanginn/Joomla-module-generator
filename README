@@ -1,0 +1,21 @@
+usage: jmod_gen.py [-h] [-a ALIAS] [-n NAME] [-d DESC] [-l LANG] [-u USER]
+                   [-e EMAIL] [-s SITE] [-m MODULEDIR]
+
+Generate blank Joomla3 module. Use quotes for arguments with spaces
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -a ALIAS, --alias ALIAS
+                        Alias for your module. Default: "Noname"
+  -n NAME, --name NAME  Name for module. Default: "Noname module"
+  -d DESC, --desc DESC  Description for module Default: "Noname module
+                        description"
+  -l LANG, --lang LANG  Set default language. Default: "ru-RU"
+  -u USER, --user USER  Set default user name for module. Default: "Nikolay
+                        Shangin"
+  -e EMAIL, --email EMAIL
+                        Set default user email. Default: "shanginn@gmail.com"
+  -s SITE, --site SITE  Set default site. Default: "http://vk.com/shangin74"
+  -m MODULEDIR, --mod-dir MODULEDIR
+                        Set default directory for result modules. Default:
+                        none
