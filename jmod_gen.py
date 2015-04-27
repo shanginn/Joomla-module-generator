@@ -36,8 +36,11 @@ parser.add_argument('-s', '--site',		action='store', dest='site',	help='Set defa
 parser.add_argument('-m', '--mod-dir',	action='store', dest='moduleDir',	help='Set default directory for result modules. Default: none')
 
 options = parser.parse_args()
+if len(sys.argv) == 1:
+	parser.print_help()
+	sys.exit()
 
-alias		= options.alias if options.alias else 'Noname'
+alias		  = options.alias if options.alias else 'Noname'
 ruName		= options.name if options.name else 'Noname module'
 ruDesc		= options.desc if options.desc else 'Noname module description'
 lowName		= alias.lower()
